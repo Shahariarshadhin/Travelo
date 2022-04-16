@@ -1,0 +1,36 @@
+.nav-logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.nav-logo img{
+    width: 300px;
+    height: 70px;
+}
+
+.nav-logo a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: larger;
+    margin-right: 20px;
+    border: 2px solid rgb(60, 165, 197);
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgb(139, 226, 253);
+}
+
+.nav a{
+    text-decoration: none;
+    margin-left: 60px;
+    font-weight: bolder;
+    font-size: larger;
+    color: aliceblue;
+}
+.nav{
+    background-color: rgb(64, 161, 240);
+    
+    padding: 20px;
+}

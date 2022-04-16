@@ -1,9 +1,15 @@
 import React from 'react';
+import './Home.css'
+import banner from '../../../images/banner.jpg'
+import { Carousel } from 'react-bootstrap';
 
 const Home = () => {
     return (
-        <div>
-            <h2>Travelo</h2>
+        <div className='home'>
+
+            <img src={banner} alt="" />
+
+
         </div>
     );
 };
