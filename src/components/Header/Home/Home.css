@@ -2,3 +2,13 @@
     width: 100%;
     
 }
+
+.info-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 20px; */
+    
+}
+.service-title{
+    color: rgb(45, 154, 218);
+}

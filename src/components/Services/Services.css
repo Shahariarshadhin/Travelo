@@ -1,0 +1,23 @@
+.info img{
+    width: 330px;
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.info {
+    border: 1px solid rgb(226, 225, 225);
+    margin: 0px 70px;
+    border-radius: 20px;
+    padding-bottom: 15px;
+    background-color: rgb(235, 234, 234);
+
+}
+
+.get-btn{
+    padding: 5px 30px;
+    background-color: rgb(64, 189, 231);
+    border: none;
+    border-radius: 10px;
+}
+

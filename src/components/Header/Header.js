@@ -19,7 +19,8 @@ const Header = () => {
             </nav>
             <nav className='nav'>
                 <Link to="/home" >Home</Link>
-                <Link to="/Services" >Services</Link>
+                <Link to="/ourservices">Services</Link>
+
                 <Link to="/blogs" >Blogs</Link>
 
                 <Link to="/about" >About</Link>
