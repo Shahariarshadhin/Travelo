@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Header/Home/Home';
 import Login from './components/Login/Login';
+import NotFound from './components/NotFound/NotFound';
 import OurServices from './components/OurService/OurServices';
 import Register from './components/Register/Register';
 import RequireAuth from './components/RequireAuth/RequireAuth';
@@ -35,6 +36,7 @@ function App() {
 
 
         }></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
 
       </Routes>
 
