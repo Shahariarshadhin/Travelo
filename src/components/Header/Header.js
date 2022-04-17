@@ -2,9 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'
 import logo from '../../images/travelo-logo.png'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 
 const Header = () => {
+    const [user] = useAuthState(auth);
     return (
         <div className='header'>
             <nav className='nav-logo'>
@@ -12,7 +15,12 @@ const Header = () => {
                     <img src={logo} alt="" />
                 </div>
                 <div>
-                    <Link to="/login" >Login</Link>
+                    {
+                        user ?
+                            <button>Sign Out</button>
+                            :
+                            <Link to="/login" >Login</Link>
+                    }
                     <Link to="/register" >Register</Link>
                 </div>
 
