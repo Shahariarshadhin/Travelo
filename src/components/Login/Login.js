@@ -1,4 +1,6 @@
+import { sendPasswordResetEmail } from 'firebase/auth';
 import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
@@ -49,6 +51,17 @@ const Login = () => {
                     </div>
                     <p>{error?.message}</p>
                     <input className='form-btn' type="submit" value="Login" />
+                    {/* <Button
+                        onClick={async () => {
+                            await sendPasswordResetEmail(email);
+                            alert("Sent email");
+                        }}
+                        variant="danger"
+                        type="submit"
+                        size="lg"
+                    >
+                        Reset
+                    </Button> */}
                 </form>
 
                 <p>
@@ -62,4 +75,5 @@ const Login = () => {
     );
 };
 
-export default Login; 
+export default Login;
+

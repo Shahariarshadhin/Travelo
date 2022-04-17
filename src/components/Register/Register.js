@@ -12,7 +12,9 @@ const Register = () => {
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, {
+        sendEmailVerification: true
+    });
 
     const handleEmailBlur = event => {
         setEmail(event.target.value);
@@ -27,7 +29,7 @@ const Register = () => {
     }
 
     if (user) {
-        navigate('/inventory');
+        navigate('/home');
     }
 
     const handleCreateUser = event => {
@@ -69,7 +71,7 @@ const Register = () => {
                     </form>
 
                     <p>
-                        Already Have and account?<Link className='form-link' to="/login">Register</Link>
+                        Already Have and account?<Link className='form-link' to="/login">Login</Link>
                     </p>
 
 

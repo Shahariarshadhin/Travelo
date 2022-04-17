@@ -34,3 +34,15 @@
     
     padding: 20px;
 }
+
+.signOut-btn{
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: larger;
+    margin-right: 20px;
+    border: 2px solid rgb(60, 165, 197);
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgb(139, 226, 253);
+    cursor: pointer;
+}

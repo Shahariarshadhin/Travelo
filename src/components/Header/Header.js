@@ -4,10 +4,15 @@ import './Header.css'
 import logo from '../../images/travelo-logo.png'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import { signOut } from 'firebase/auth';
 
 
 const Header = () => {
     const [user] = useAuthState(auth);
+
+    const handleSignOut = () => {
+        signOut(auth);
+    }
     return (
         <div className='header'>
             <nav className='nav-logo'>
@@ -17,7 +22,7 @@ const Header = () => {
                 <div>
                     {
                         user ?
-                            <button>Sign Out</button>
+                            <button className='signOut-btn' onClick={handleSignOut}>Sign Out</button>
                             :
                             <Link to="/login" >Login</Link>
                     }
