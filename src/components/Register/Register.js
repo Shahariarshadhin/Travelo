@@ -55,17 +55,17 @@ const Register = () => {
                     <h2 className='form-title'>Register</h2>
                     <form onSubmit={handleCreateUser}>
                         <div className="input-group">
-                            <label htmlFor="email">Email</label>
-                            <input onBlur={handleEmailBlur} type="email" name="email" required />
+
+                            <input onBlur={handleEmailBlur} placeholder="Enter email" type="email" name="email" required />
                         </div>
                         <div className="input-group">
-                            <label htmlFor="password">Password</label>
-                            <input onBlur={handlePasswordBlur} type="password" name="password" required />
+
+                            <input onBlur={handlePasswordBlur} placeholder="Enter Password" type="password" name="password" required />
 
                         </div>
                         <div className="input-group">
-                            <label htmlFor="confirm-password">Confirm Password</label>
-                            <input onBlur={handleConfirmPassword} type="password" name="confirm-password" required />
+
+                            <input onBlur={handleConfirmPassword} placeholder="Confirm Password" type="password" name="confirm-password" required />
 
                         </div>
                         <p style={{ color: 'red' }}>{error}</p>

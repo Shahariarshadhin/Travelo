@@ -1,0 +1,17 @@
+.form-container{
+    background-color: black;
+    color: aliceblue;
+}
+
+.form-container h2{
+    color: aliceblue;
+}
+
+.submit-btn{
+    border: none;
+    background-color: rgb(231, 69, 69);
+    color: aliceblue;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}

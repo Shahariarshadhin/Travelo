@@ -42,12 +42,12 @@ const Login = () => {
                 <h2 className='form-title'>Login</h2>
                 <form onSubmit={handleUserSignIn}>
                     <div className="input-group">
-                        <label htmlFor="email">Email</label>
-                        <input onBlur={handleEmailBlur} type="email" name="email" required />
+
+                        <input onBlur={handleEmailBlur} placeholder="Enter email" type="email" name="email" required />
                     </div>
                     <div className="input-group">
-                        <label htmlFor="password">Password</label>
-                        <input onBlur={handlePasswordBlur} type="password" name="password" required />
+
+                        <input onBlur={handlePasswordBlur} placeholder="Enter Password" type="password" name="password" required />
 
                     </div>
                     <p>{error?.message}</p>

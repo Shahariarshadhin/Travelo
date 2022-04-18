@@ -12,3 +12,30 @@
 .service-title{
     color: rgb(45, 154, 218);
 }
+.extra-sec{
+    height: 600px;
+  background-color: rgb(29, 25, 25);
+  border-radius: 40px;
+  margin: 20px 65px;
+  color: aliceblue;
+  padding: 20px;
+ 
+  
+}
+.extra-sec h2{
+    font-style: italic;
+}
+.extra-info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.extra-info h3{
+    color: aqua;
+    font-style: italic;
+}
+
+.extra-info p{
+    text-align: justify;
+}
