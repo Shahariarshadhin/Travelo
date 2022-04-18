@@ -73,7 +73,7 @@ const Register = () => {
                     </form>
 
                     <p>
-                        Already Have and account?<Link className='form-link' to="/login">Login</Link>
+                        Already Have an account?<Link className='form-link' to="/login">Login</Link>
                     </p>
 
                     <SocialLogin></SocialLogin>

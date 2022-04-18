@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import Services from '../Services/Services';
+import './ServiceProvider.css'
 
 const ServiceProvide = () => {
     const [services, setServices] = useState([]);

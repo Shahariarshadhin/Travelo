@@ -46,3 +46,20 @@
     background-color: rgb(139, 226, 253);
     cursor: pointer;
 }
+
+@media only screen and   (max-width: 576px) {
+ 
+  
+    .nav a{
+        grid-template-columns: repeat(1,1fr);
+        display: grid;
+    }
+    .nav-logo {
+        grid-template-columns: repeat(1,1fr);
+        display: grid;
+        height: 200px;
+    }
+    
+  
+}
+  
