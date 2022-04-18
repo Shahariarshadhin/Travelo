@@ -13,7 +13,7 @@
     color: rgb(45, 154, 218);
 }
 .extra-sec{
-    height: 600px;
+    height: 400px;
   background-color: rgb(29, 25, 25);
   border-radius: 40px;
   margin: 20px 65px;
@@ -40,3 +40,13 @@
     text-align: justify;
 }
 
+@media only screen and   (max-width: 576px){
+    .extra-info{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+    .extra-sec{
+        height: 800px;
+    }
+}
